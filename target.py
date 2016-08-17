@@ -48,8 +48,8 @@ class TargetPool():
         for asn in self.target_asn_list:
             self.asn_dict[str(asn)]=""
 
-    def export_target_asn_list(output_file_name):
-        fp = open(self.cwd+"/"+out_file_name, 'wb')
+    def export_target_asn_list(self, output_file_name):
+        fp = open(self.cwd+"/"+output_file_name, 'wb')
         for asn in self.target_asn_list:
             fp.write(str(asn)+'\n')
         fp.close()
